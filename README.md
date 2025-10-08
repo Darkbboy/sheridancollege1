@@ -76,7 +76,7 @@ GOAL 2
  <section class="border-t pt-4 border-gray-200">
             <h2 class="font-semibold">Feedback Statement:</h2>
             <p>Please provide feedback on this operations plan.</p>
-            <p>Email: <a href="mailto:saneho@sheridancollege.ca" class="text-blue-600 hover:underline">ops@hd.com</a>. Tel: <a href="tel:5550199" class="text-blue-600 hover:underline">555-0199</a>.</p>
+            <p>Email: <a href="mailto:saneho@sheridancollege.ca" class="text-blue-600 hover:underline">saneho@sheridancollege.ca</a>. Tel: <a href="tel:5550199" class="text-blue-600 hover:underline">555-0199</a>.</p>
         </section>
 
 </div>
