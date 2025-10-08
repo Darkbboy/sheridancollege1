@@ -79,6 +79,6 @@ GOAL 2
             <p>Email: <a href="mailto:saneho@sheridancollege.ca" class="text-blue-600 hover:underline">ops@hd.com</a>. Tel: <a href="tel:5550199" class="text-blue-600 hover:underline">555-0199</a>.</p>
         </section>
 
-    </div>
+</div>
 </body>
 </html>
