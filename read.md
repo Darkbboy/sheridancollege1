@@ -17,10 +17,7 @@
                         src="Videoclass.mp4" 
                         controls 
                         class="w-full h-full object-cover" 
-                        style="width: 100%; height: 100%; object-fit: cover;">
-                        
-                Your browser does not support the video tag.
-</video>
+                        style="width: 100%; height: 100%; object-fit: cover;"></video>
    </div>
  <div>
          <div>
