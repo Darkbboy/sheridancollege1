@@ -13,7 +13,9 @@
 
 <section> <div class="flex items-center space-x-4 mb-4">
                 <div class="w-24 h-24 rounded-full overflow-hidden border-4 border-gray-300 flex-shrink-0">
-     <video src="Videoclass.mp4"></video>
+
+<a href="https://www.youtube.com/watch?v=X9jgP899w_c&feature=youtu.be" target="_blank">Watch the Supervisor Video on YouTube</a>
+    
    </div>
  <div>
          <div>
