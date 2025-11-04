@@ -14,7 +14,7 @@
 <section> <div class="flex items-center space-x-4 mb-4">
                 <div class="w-24 h-24 rounded-full overflow-hidden border-4 border-gray-300 flex-shrink-0">
                     <video 
-                        src="sheridancollege! 2025-11-03 23-52-12 (online-video-cutter.com) (1).mp4" 
+                        src="Videoclass.mp4" 
                         controls 
                         class="w-full h-full object-cover" 
                         style="width: 100%; height: 100%; object-fit: cover;">
