@@ -16,7 +16,7 @@
                 
   <div class="w-24 h-24 rounded-full overflow-hidden border-4 border-gray-300 flex-shrink-0">
                     
-  <img src="2025-11-03 23-52-12 (online-video-cutter.com) (1) (1).mp4" alt="Supervisor video" class="w-full h-full object-cover">
+  <img src="Videoclass.mp4" alt="Supervisor video" class="w-full h-full object-cover">
                 </div>
                 <div>
                     <p>Hello, I am the Help Desk Supervisor.</p>
