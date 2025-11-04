@@ -9,15 +9,28 @@
         <header class="text-center pb-4 border-b border-gray-200">
             <h1 class="font-bold text-2xl mb-2">Help Desk Operations Plan Overview</h1>
         </header>
-            <video src="Videoclass.mp4" controls class="w-full h-full object-cover"></video>
-</div
-        
-</section>
-<div class="flex items-center space-x-4 mb-4">
-                
-  <div class="w-24 h-24 rounded-full overflow-hidden border-4 border-gray-300 flex-shrink-0">
-<video src="Videoclass.mp4"</video>              
-               
+          </header>
+
+<section> <div class="flex items-center space-x-4 mb-4">
+                <div class="w-24 h-24 rounded-full overflow-hidden border-4 border-gray-300 flex-shrink-0">
+                    <video 
+                        src="sheridancollege! 2025-11-03 23-52-12 (online-video-cutter.com) (1).mp4" 
+                        controls 
+                        class="w-full h-full object-cover" 
+                        style="width: 100%; height: 100%; object-fit: cover;">
+                        
+                 Your browser does not support the video tag.
+</video>
+   </div>
+ <div>
+         <div>
+        <p>Hello, I am the Help Desk Supervisor.</p>
+           </div>
+         </div>
+         </div>
+            <h2 class="font-semibold mt-4">Reason for the Plan:</h2>
+            <p>This plan outlines our Help Desk goals for the next fiscal year.</p>
+        </section>
 </div>
                 <div>
                     <p>Hello, I am the Help Desk Supervisor.</p>
