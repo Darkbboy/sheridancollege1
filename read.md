@@ -13,11 +13,7 @@
 
 <section> <div class="flex items-center space-x-4 mb-4">
                 <div class="w-24 h-24 rounded-full overflow-hidden border-4 border-gray-300 flex-shrink-0">
-                    <video 
-                        src="Videoclass.mp4" 
-                        controls 
-                        class="w-full h-full object-cover" 
-                        style="width: 100%; height: 100%; object-fit: cover;"></video>
+      <video src="Videoclass.mp4"> <video/>
    </div>
  <div>
          <div>
