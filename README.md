@@ -16,7 +16,13 @@
                 
   <div class="w-24 h-24 rounded-full overflow-hidden border-4 border-gray-300 flex-shrink-0">
                     
-<img src="Videoclass.mp4" alt="Supervisor video" class="w-full h-full object-cover">                
+<video 
+    src="Videoclass.mp4" 
+    controls 
+    class="w-full h-full object-cover" 
+    style="width: 100%; height: 100%; object-fit: cover;">
+    
+</video>                
 </div>
                 <div>
                     <p>Hello, I am the Help Desk Supervisor.</p>
