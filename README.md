@@ -9,13 +9,8 @@
         <header class="text-center pb-4 border-b border-gray-200">
             <h1 class="font-bold text-2xl mb-2">Help Desk Operations Plan Overview</h1>
         </header>
-<div class="w-24 h-24 rounded-full overflow-hidden border-4 border-gray-300 flex-shrink-0">
-    <video controls class="w-full h-full object-cover">
-        <source src="Videoclass.mp4" type="video/mp4">
-        
-        Your browser does not support the video tag.
-    </video>
-</div>
+            <video src="Videoclass.mp4" controls class="w-full h-full object-cover"></video>
+</div
         
 </section>
 <div class="flex items-center space-x-4 mb-4">
