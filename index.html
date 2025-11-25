@@ -1,93 +1,263 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<video src="Videoclass.mp4" width="640" height="360" controls></video>
-
-        
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help Desk Operations Plan Overview</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom styles for the embedded bar charts */
+        .chart-container {
+            height: 150px; /* Fixed height for visual consistency of the Y-axis */
+            width: 100%;
+            display: flex;
+            align-items: flex-end;
+            border-left: 1px solid #e5e7eb;
+            border-bottom: 1px solid #e5e7eb;
+            position: relative;
+        }
+        .bar {
+            width: 40px;
+            margin: 0 5px;
+            transition: height 0.3s ease;
+            position: relative;
+        }
+        .bar-label {
+            position: absolute;
+            top: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 0.75rem;
+            color: #4b5563;
+            font-weight: 500;
+        }
+    </style>
 </head>
-<body class="bg-blue-50 min-h-screen p-8">
-    <div class="max-w-3xl mx-auto bg-white p-6 shadow-xl rounded-xl rubric-text space-y-6">
-        <header class="text-center pb-4 border-b border-gray-200">
-            <h1 class="font-bold text-2xl mb-2">Help Desk Operations Plan Overview</h1>
+<body class="bg-gray-50 p-6 sm:p-10 font-sans text-gray-800">
+
+    <div class="max-w-4xl mx-auto bg-white p-8 rounded-lg shadow-xl">
+
+        <!-- ORIGINAL CONTENT START -->
+        <header class="mb-8">
+            <h1 class="text-3xl font-bold text-indigo-700 border-b-2 border-indigo-200 pb-2">Help Desk Operations Plan Overview</h1>
+            <p class="mt-4 text-lg">Hello, I am the Help Desk Supervisor.</p>
         </header>
-          </header>
 
-<section> <div class="flex items-center space-x-4 mb-4">
-                <div class="w-24 h-24 rounded-full overflow-hidden border-4 border-gray-300 flex-shrink-0">
-
-
-   </div>
- <div>
-         <div>
-        <p>Hello, I am the Help Desk Supervisor.</p>
-           </div>
-         </div>
-         </div>
-            <h2 class="font-semibold mt-4">Reason for the Plan:</h2>
-            <p>This plan outlines our Help Desk goals for the next fiscal year.</p>
-        </section>
-</div>
-                <div>
-                    <p>Hello, I am the Help Desk Supervisor.</p>
-                </div>
-            </div>
-            <h2 class="font-semibold mt-4">Reason for the Plan:</h2>
-            <p>This plan outlines our Help Desk goals for the next fiscal year.</p>
+        <section class="mb-8">
+            <h2 class="text-2xl font-semibold text-indigo-600 mb-3">Reason for the Plan:</h2>
+            <p class="mb-2">This plan outlines our Help Desk goals for the next fiscal year.</p>
+            <p>Mission and Visions:</p>
         </section>
 
- Mission and Visions
-<section class="space-y-4">
-            <h2 class="font-semibold">Mission:</h2>
+        <section class="mb-8">
+            <h2 class="text-2xl font-semibold text-indigo-600 mb-3">Mission:</h2>
             <p>Provide fast technical support maximizing user productivity.</p>
-
- <h2 class="font-semibold">Vision:</h2>
-            <p>The Help Desk will be a world-class technology resource center.</p>
         </section>
 
-Smart goal and benefits
-<section class="space-y-4">
-            <h2 class="font-bold text-xl border-t pt-4 border-gray-200">Five SMART Goals</h2>
+        <section class="mb-8">
+            <h2 class="text-2xl font-semibold text-indigo-600 mb-3">Vision:</h2>
+            <p class="mb-2">The Help Desk will be a world-class technology resource center.</p>
+            <p>Smart goal and benefits</p>
+        </section>
 
- <div class="ml-4 space-y-4">
- GOAL 1
-                <div>
-                    <p class="font-medium">1. Decrease call abandonment rate fifteen percent by quarter four.</p>
-                    <p class="pl-4 italic">- Users receive faster service.</p>
-                </div>
-GOAL 2
-  <div>
-                    <p class="font-medium">2. Increase First Call Resolution ninety percent by December.</p>
-                    <p class="pl-4 italic">- Technical issues are fixed immediately.</p>
-                </div>
+        <section class="mb-10">
+            <h2 class="text-2xl font-semibold text-indigo-600 mb-4">Five SMART Goals</h2>
 
-  GOAL 3
- <div>
-                    <p class="font-medium">3. Improve Customer Satisfaction Score ninety-five percent by June.</p>
-                    <p class="pl-4 italic">- Better support experiences for all users.</p>
+            <div class="space-y-4 text-base">
+                <div id="goal-1">
+                    <h3 class="font-bold text-lg text-gray-700">GOAL 1</h3>
+                    <p>- Decrease call abandonment rate fifteen percent by quarter four.</p>
+                    <p>- Users receive faster service.</p>
                 </div>
 
-  GOAL 4
- <div>
-                    <p class="font-medium">4. Reduce Average Handle Time eight minutes by fiscal year end.</p>
-                    <p class="pl-4 italic">- More staff time available for critical work.</p>
+                <div id="goal-2">
+                    <h3 class="font-bold text-lg text-gray-700">GOAL 2</h3>
+                    <p>- Increase First Call Resolution ninety percent by December.</p>
+                    <p>- Technical issues are fixed immediately.</p>
                 </div>
 
- GOAL 5
-  <div>
-                    <p class="font-medium">5. Increase staff training completion one hundred percent by March.</p>
-                    <p class="pl-4 italic">- Staff are highly skilled for support needs.</p>
+                <div id="goal-3">
+                    <h3 class="font-bold text-lg text-gray-700">GOAL 3</h3>
+                    <p>- Improve Customer Satisfaction Score ninety-five percent by June.</p>
+                    <p>- Better support experiences for all users.</p>
+                </div>
+
+                <div id="goal-4">
+                    <h3 class="font-bold text-lg text-gray-700">GOAL 4</h3>
+                    <p>- Reduce Average Handle Time eight minutes by fiscal year end.</p>
+                    <p>- More staff time available for critical work.</p>
+                </div>
+
+                <div id="goal-5">
+                    <h3 class="font-bold text-lg text-gray-700">GOAL 5</h3>
+                    <p>- Increase staff training completion one hundred percent by March.</p>
+                    <p>- Staff are highly skilled for support needs.</p>
                 </div>
             </div>
         </section>
-        
+        <!-- ORIGINAL CONTENT END -->
 
-  Feed back and statement
- <section class="border-t pt-4 border-gray-200">
-            <h2 class="font-semibold">Feedback Statement:</h2>
-            <p>Please provide feedback on this operations plan.</p>
-            <p>Email: <a href="mailto:saneho@sheridancollege.ca" class="text-blue-600 hover:underline">saneho@sheridancollege.ca</a>. Tel: <a href="tel:5550199" class="text-blue-600 hover:underline">555-0199</a>.</p>
+        <!-- STAKEHOLDER REPORT START (The inserted document content) -->
+        <section class="mb-10 p-6 bg-indigo-50 rounded-lg border border-indigo-200">
+            <h2 class="text-2xl font-bold text-indigo-700 mb-6">Monthly Stakeholder Report - November 2025</h2>
+            
+            <!-- EXCEL/SPREADSHEET DATA SIMULATION (The required "document" content) -->
+            <h3 class="text-xl font-semibold text-indigo-600 mb-4">Raw Performance Data</h3>
+            <div class="overflow-x-auto mb-8">
+                <table class="min-w-full divide-y divide-indigo-200 rounded-lg shadow-sm border border-indigo-200">
+                    <thead class="bg-indigo-200">
+                        <tr>
+                            <th class="px-3 py-2 text-left text-xs font-medium text-gray-700 uppercase tracking-wider">#</th>
+                            <th class="px-3 py-2 text-left text-xs font-medium text-gray-700 uppercase tracking-wider">Measurement</th>
+                            <th class="px-3 py-2 text-center text-xs font-medium text-gray-700 uppercase tracking-wider">Goal</th>
+                            <th class="px-3 py-2 text-center text-xs font-medium text-gray-700 uppercase tracking-wider">Actual</th>
+                            <th class="px-3 py-2 text-left text-xs font-medium text-gray-700 uppercase tracking-wider">Comment</th>
+                        </tr>
+                    </thead>
+                    <tbody class="bg-white divide-y divide-indigo-100 text-sm">
+                        <!-- Data Row 1: Call Abandonment Rate -->
+                        <tr>
+                            <td class="px-3 py-2 whitespace-nowrap text-center font-medium">1</td>
+                            <td class="px-3 py-2">Call Abandonment Rate</td>
+                            <td class="px-3 py-2 whitespace-nowrap text-center font-bold text-indigo-600">15%</td>
+                            <td class="px-3 py-2 whitespace-nowrap text-center text-red-600 font-bold">18%</td>
+                            <td class="px-3 py-2 italic text-xs">Abandonment slightly high; focused efforts are starting now.</td>
+                        </tr>
+                        <!-- Data Row 2: First Call Resolution -->
+                        <tr>
+                            <td class="px-3 py-2 whitespace-nowrap text-center font-medium">2</td>
+                            <td class="px-3 py-2">First Call Resolution</td>
+                            <td class="px-3 py-2 whitespace-nowrap text-center font-bold text-indigo-600">90%</td>
+                            <td class="px-3 py-2 whitespace-nowrap text-center text-yellow-600 font-bold">88%</td>
+                            <td class="px-3 py-2 italic text-xs">Slightly below target; training will close this performance gap.</td>
+                        </tr>
+                        <!-- Data Row 3: Customer Satisfaction Score -->
+                        <tr>
+                            <td class="px-3 py-2 whitespace-nowrap text-center font-medium">3</td>
+                            <td class="px-3 py-2">Customer Satisfaction Score</td>
+                            <td class="px-3 py-2 whitespace-nowrap text-center font-bold text-indigo-600">95%</td>
+                            <td class="px-3 py-2 whitespace-nowrap text-center text-green-600 font-bold">96%</td>
+                            <td class="px-3 py-2 italic text-xs">Exceeded expectation; excellent user experiences reported this month.</td>
+                        </tr>
+                        <!-- Data Row 4: Average Handle Time -->
+                        <tr>
+                            <td class="px-3 py-2 whitespace-nowrap text-center font-medium">4</td>
+                            <td class="px-3 py-2">Average Handle Time</td>
+                            <td class="px-3 py-2 whitespace-nowrap text-center font-bold text-indigo-600">8.0 min</td>
+                            <td class="px-3 py-2 whitespace-nowrap text-center text-red-600 font-bold">8.5 min</td>
+                            <td class="px-3 py-2 italic text-xs">A slight increase; optimizing workflows is still the key.</td>
+                        </tr>
+                        <!-- Data Row 5: Staff Training Completion -->
+                        <tr>
+                            <td class="px-3 py-2 whitespace-nowrap text-center font-medium">5</td>
+                            <td class="px-3 py-2">Staff Training Completion</td>
+                            <td class="px-3 py-2 whitespace-nowrap text-center font-bold text-indigo-600">100%</td>
+                            <td class="px-3 py-2 whitespace-nowrap text-center text-yellow-600 font-bold">90%</td>
+                            <td class="px-3 py-2 italic text-xs">Ten percent remaining; focused completion effort starts now.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h3 class="text-xl font-semibold text-indigo-600 mb-4">Visual Performance Summary (Charts)</h3>
+
+            <div id="report-charts" class="space-y-10">
+                <!-- CHART 1: Call Abandonment Rate (Lower is better) -->
+                <div class="bg-white p-4 rounded-lg shadow-md">
+                    <h4 class="font-semibold text-gray-700 mb-4 text-center">1. Call Abandonment Rate (%)</h4>
+                    <div class="chart-container">
+                        <!-- Goal Bar (15%) - 60% of 25% max scale (25% max is used for visual balance since 18% is > 15%) -->
+                        <div class="bar bg-indigo-500 rounded-t" style="height: 60%;">
+                            <span class="bar-label">Goal (15%)</span>
+                        </div>
+                        <!-- Actual Bar (18%) - 72% of 25% max scale -->
+                        <div class="bar bg-red-500 rounded-t" style="height: 72%;">
+                            <span class="bar-label">Actual (18%)</span>
+                        </div>
+                    </div>
+                    <p class="text-sm text-center mt-3 text-gray-600 italic">Abandonment slightly high; focused efforts are starting now.</p>
+                </div>
+
+                <!-- CHART 2: First Call Resolution (Higher is better) -->
+                <div class="bg-white p-4 rounded-lg shadow-md">
+                    <h4 class="font-semibold text-gray-700 mb-4 text-center">2. First Call Resolution (%)</h4>
+                    <div class="chart-container">
+                        <!-- Goal Bar (90%) -->
+                        <div class="bar bg-indigo-500 rounded-t" style="height: 90%;">
+                            <span class="bar-label">Goal (90%)</span>
+                        </div>
+                        <!-- Actual Bar (88%) -->
+                        <div class="bar bg-yellow-500 rounded-t" style="height: 88%;">
+                            <span class="bar-label">Actual (88%)</span>
+                        </div>
+                    </div>
+                    <p class="text-sm text-center mt-3 text-gray-600 italic">Slightly below target; training will close this performance gap.</p>
+                </div>
+
+                <!-- CHART 3: Customer Satisfaction Score (Higher is better) -->
+                <div class="bg-white p-4 rounded-lg shadow-md">
+                    <h4 class="font-semibold text-gray-700 mb-4 text-center">3. Customer Satisfaction Score (%)</h4>
+                    <div class="chart-container">
+                        <!-- Goal Bar (95%) -->
+                        <div class="bar bg-indigo-500 rounded-t" style="height: 95%;">
+                            <span class="bar-label">Goal (95%)</span>
+                        </div>
+                        <!-- Actual Bar (96%) -->
+                        <div class="bar bg-green-500 rounded-t" style="height: 96%;">
+                            <span class="bar-label">Actual (96%)</span>
+                        </div>
+                    </div>
+                    <p class="text-sm text-center mt-3 text-gray-600 italic">Exceeded expectation; excellent user experiences reported this month.</p>
+                </div>
+
+                <!-- CHART 4: Average Handle Time (Lower is better) -->
+                <div class="bg-white p-4 rounded-lg shadow-md">
+                    <h4 class="font-semibold text-gray-700 mb-4 text-center">4. Average Handle Time (minutes)</h4>
+                    <div class="chart-container">
+                        <!-- Goal Bar (8.0 min) - 80% of 10 min max scale (10 min max is used for visual balance since 8.5 min is > 8.0 min) -->
+                        <div class="bar bg-indigo-500 rounded-t" style="height: 80%;">
+                            <span class="bar-label">Goal (8.0)</span>
+                        </div>
+                        <!-- Actual Bar (8.5 min) - 85% of 10 min max scale -->
+                        <div class="bar bg-red-500 rounded-t" style="height: 85%;">
+                            <span class="bar-label">Actual (8.5)</span>
+                        </div>
+                    </div>
+                    <p class="text-sm text-center mt-3 text-gray-600 italic">A slight increase; optimizing workflows is still the key.</p>
+                </div>
+
+                <!-- CHART 5: Staff Training Completion (Higher is better) -->
+                <div class="bg-white p-4 rounded-lg shadow-md">
+                    <h4 class="font-semibold text-gray-700 mb-4 text-center">5. Staff Training Completion (%)</h4>
+                    <div class="chart-container">
+                        <!-- Goal Bar (100%) -->
+                        <div class="bar bg-indigo-500 rounded-t" style="height: 100%;">
+                            <span class="bar-label">Goal (100%)</span>
+                        </div>
+                        <!-- Actual Bar (90%) -->
+                        <div class="bar bg-yellow-500 rounded-t" style="height: 90%;">
+                            <span class="bar-label">Actual (90%)</span>
+                        </div>
+                    </div>
+                    <p class="text-sm text-center mt-3 text-gray-600 italic">Ten percent remaining; focused completion effort starts now.</p>
+                </div>
+            </div>
+            
+            <p class="text-sm text-gray-500 mt-6 pt-4 border-t border-indigo-200">
+                <span class="font-bold text-indigo-600">Goal Bar/Value:</span> Indigo
+                <span class="ml-4 font-bold text-indigo-600">Actual Bar/Value:</span> Green (Met/Exceeded Goal), Yellow (Slightly Below Goal), Red (Significantly Below/Over Goal)
+            </p>
         </section>
+        <!-- STAKEHOLDER REPORT END -->
 
-</div>
+        <!-- FEEDBACK REQUEST START -->
+        <section class="mt-10 pt-4 border-t-2 border-indigo-200">
+            <h2 class="text-2xl font-semibold text-indigo-600 mb-3">Feedback Statement:</h2>
+            <p>Please provide feedback on this operations plan.</p>
+            <p class="mt-2 text-sm text-gray-600">Email: <a href="mailto:saneho@sheridancollege.ca" class="text-indigo-500 hover:text-indigo-700">saneho@sheridancollege.ca</a> Tel: 555-0199.</p>
+        </section>
+        <!-- FEEDBACK REQUEST END -->
+    </div>
 </body>
 </html>
